@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Upcoming Todos</title></head>
+<body>
+    <h1>Upcoming Todos</h1>
+    <ul>
+        {% for todo in todos %}
+            <li>{{ todo.task }} - Due: {{ todo.due }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back</a>
+</body>
+</html>

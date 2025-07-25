@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Edit Todo</title></head>
+<body>
+    <h1>Edit Todo</h1>
+    <form method="post">
+        <input type="text" name="task" value="{{ todo.task }}" required>
+        <input type="date" name="due" value="{{ todo.due }}" required>
+        <button type="submit">Save</button>
+    </form>
+    <a href="/">Back</a>
+</body>
+</html>
