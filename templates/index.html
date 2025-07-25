@@ -13,11 +13,13 @@
 
     <h2>Todo List:</h2>
     <ul>
-        {% for todo in todos %}
-            <li>{{ todo }}</li>
-        {% else %}
-            <li>No todos yet!</li>
-        {% endfor %}
+         {% for todo in todos %}
+            <li>
+                {{ todo.task }} - Due: {{ todo.due }}
+                a href="/edit/{{ todo.id }}">✏️</a>
+                <a href="/delete/{{ todo.id }}">❌</a>
+            </li>
+        {% endfor %}for %}
     </ul>
 </body>
 </html>
